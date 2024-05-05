@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-8</title>
+
+    <style>
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h2{
+            margin-left: 20px;
+        }
+        .ans{
+            margin-left: 50px;
+            text-align: center;
+            justify-content: left;
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task-8</h1>
+    <h2>Q8: 
+        Write a JavaScript program to check whether a string starts with 'Java' if <br>
+        it does not otherwise. <br>
+    </h2> 
+
+    <script>
+    var str = prompt("Enter string:")
+    var convert = str.split('').slice(0,4).join("")
+    console.log(convert);
+   
+    if (convert == "java") {
+        document.write(`<h1 class="ans"> Yes Its start java.`)
+    }else{
+        document.write(`<h1 class="ans">  Its not start java.`)
+
+    }
+
+    </script>
+</body>
+</html>
